@@ -31,12 +31,12 @@ This document describes the full physical configuration of my workstation — co
 
 ## 🔗 References
 
-- [AMD Ryzen 9 9950X3D – AMD product page]([https://www.amd.com/](https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html))
+- [AMD Ryzen 9 9950X3D – AMD product page](https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html)
 - [MSI MAG X870E TOMAHAWK WIFI – official specs](https://www.msi.com/Motherboard/MAG-X870e-TOMAHAWK-WIFI/Overview)
 - [Noctua NH-D15 G2 LBC - product page](https://noctua.at/en/nh-d15-g2)
 - [Kingston Fury Beast Black EXPO 64GB - specification](https://www.kingston.com/datasheets/KF560C30BBEK2-64.pdf)
 - [ASUS GeForce RTX™ 5080 16GB GDDR7 Noctua OC Edition - product page](https://www.asus.com/motherboards-components/graphics-cards/asus/rtx5080-o16g-noctua/)
-- [Samsung 990 Pro – product page]([https://www.samsung.com/](https://www.samsung.com/pl/memory-storage/nvme-ssd/990-pro-4tb-nvme-pcie-gen-4-mz-v9p4t0bw/))
+- [Samsung 990 Pro – product page](https://www.samsung.com/pl/memory-storage/nvme-ssd/990-pro-4tb-nvme-pcie-gen-4-mz-v9p4t0bw/)
 - [Fractal Design North XL Charcoal Black TG Dark - product page](https://www.fractal-design.com/products/cases/north/north-xl/charcoal-black-tg-dark/)
 - [Noctua NF-A12x25 G2 PWM - product page](https://noctua.at/en/nf-a12x25-g2-pwm)
 - [Noctua NF-A14x25 G2 PWM - product page](https://noctua.at/en/nf-a14x25-g2-pwm)
