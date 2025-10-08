@@ -18,7 +18,8 @@ Welcome to **`hal9000_init`** — a complete technical manual for building, conf
 This repository documents every layer of the system:
 from hardware selection, through OS installation and partitioning, to configuration and recovery procedures.
 
-This is **not a backup**. It’s a _blueprint_ 📐 for reinitializing my system.
+> [!NOTE]
+> This is **not a backup**. It’s a _blueprint_ 📐 for reinitializing my system.
 
 ## 🧱 Structure
 
