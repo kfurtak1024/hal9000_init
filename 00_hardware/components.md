@@ -16,3 +16,7 @@ This document describes the full physical configuration of my workstation — co
 ## 🧩 Component Overview
 
 TBD
+
+## 🔗 References
+
+TBD
