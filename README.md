@@ -52,4 +52,5 @@ I plan to mitigate this limitation by running Windows 11 in a virtual machine un
 ## 📜 License
 
 Personal documentation. 
+
 Feel free to browse and adapt ideas, but this repo is tailored to my specific setup.
