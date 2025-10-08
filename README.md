@@ -11,6 +11,8 @@
 
 ## 🧠 HAL9000 Initialization Protocol
 
+<img src="hal9000.svg" alt="HAL 9000" width="180" align="right" style="margin-left: 15px; width: 128px; height:128px">
+
 Welcome to **`hal9000_init`** — a complete technical manual for building, configuring, and restoring my personal workstation.
 
 This repository documents every layer of the system:
