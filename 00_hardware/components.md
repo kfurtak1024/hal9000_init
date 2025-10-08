@@ -29,6 +29,10 @@ This document describes the full physical configuration of my workstation — co
 | **Case Fans** | **2 × Noctua NF-A12x25 G2 PWM + 3 × NF-A14x25 G2 PWM Sterrox** | Quiet, high-pressure fans for balanced intake/exhaust; tuned for laminar airflow. |
 | **PSU** | **Corsair HX1200i** | 1200 W 80+ Platinum, fully modular, zero-RPM fan mode, ample headroom. |
 
+## 🧾 Future Upgrades
+
+- Potential **monitor upgrade** to OLED (once burn-in risk on desktop use improves).
+
 ## 🔗 References
 
 - [AMD Ryzen 9 9950X3D – AMD product page](https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html)
