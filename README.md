@@ -21,6 +21,26 @@ from hardware selection, through OS installation and partitioning, to configurat
 > [!NOTE]
 > This is **not a backup**. It’s a _blueprint_ 📐 for reinitializing my system.
 
+## 🎯 Purpose & Usage
+
+The **HAL9000** system serves as my **primary personal and professional machine**, designed for flexibility across multiple high-performance domains:
+
+### 💻 Development
+Primarily used for software and game development:
+- Software and systems development, including backend and tooling projects.
+- **Game development** (Godot, maybe Unreal), requiring high GPU performance and fast compile times.
+- Running **Linux** as the main environment for development, with tools like Docker, build chains, and local CI environments.
+
+### 🎮 Gaming
+Gaming is primarily done under Windows 11, but I intend to gradually experiment with native Linux gaming (via Steam Proton, Lutris, etc.) to evaluate performance and compatibility.
+
+### 🧠 AI & Experimentation
+The system will also be used for local AI experimentation, including testing LLMs, diffusion models, and simulation-based AI tools, with GPU acceleration enabled under Linux.
+
+### 🌐 Remote Work
+Some remote work tasks require Windows 11, specifically due to VPN compatibility.
+I plan to mitigate this limitation by running Windows 11 in a virtual machine under Linux whenever possible.
+
 ## 🧱 Structure
 
 | Section                                  | Description                                    |
