@@ -6,6 +6,8 @@
 ██║  ██║██║  ██║███████╗█████╔╝╚██████╔╝╚██████╔╝╚██████╔╝███████╗██║██║ ╚████║██║   ██║   
 ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚════╝  ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝
 ```
+<div align="right"><sup><a href="https://patorjk.com/software/taag/#p=display&f=ANSI+Shadow&t=Type+Something+&x=none&v=4&h=4&w=80&we=false">Banner created using patorjk.com</a></sup></div>
+
 >_"The 9000 series is the most reliable computer ever made."_
 > — HAL 9000
 
