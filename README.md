@@ -48,7 +48,7 @@ I plan to mitigate this limitation by running Windows 11 in a virtual machine un
 | Section                                  | Description                                                                                                                                                |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [00_hardware](00_hardware/components.md) | Components list, rationale, and assembly notes                                                                                                             |
-| [10_os_linux](10_setup/thermal_setup.md) | Cooling and thermal setup — fan configuration, airflow design, BIOS fan curves, and noise optimization                                                     |
+| [10_setup](10_setup/thermal_setup.md) | Cooling and thermal setup — fan configuration, airflow design, BIOS fan curves, and noise optimization                                                     |
 | [20_os_linux](20_os_linux/overview.md)   | Step-by-step guide for installing Pop!_OS as the main OS, partitioning the drive, configuring development tools, and optionally running Windows 11 as a VM |
 | [30_os_win11](30_os_win11/overview.md)   | Installation guide for Windows 11, partitioning details, configuration for VPN compatibility and gaming                                                    |
 
