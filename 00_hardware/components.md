@@ -31,7 +31,7 @@ This document describes the full physical configuration of my workstation — co
 
 ## 🧾 Future Upgrades
 
-- Potential **monitor upgrade** to OLED (once burn-in risk on desktop use improves).
+- **Monitor upgrade** to 32 inches, IPS, 4K, 144Hz+
 
 ## 🔗 References
 
