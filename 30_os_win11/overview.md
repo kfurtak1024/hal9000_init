@@ -9,7 +9,7 @@
 >_"I think you know what the problem is just as well as I do."_
 > — HAL 9000
 
-## 💾 Installation
+## 💿 Installation
 
 Since the Wi-Fi module on the **MSI MAG X870E TOMAHAWK WIFI** motherboard is not detected by the default **Windows 11 installer**, it’s necessary to either:
 - Use a USB drive containing the network drivers, or
@@ -25,3 +25,6 @@ This will restart the setup and allow you to continue the installation without a
 
 After completing the installation, use a USB drive with the Wi-Fi and chipset drivers downloaded from the MSI MAG X870E TOMAHAWK WIFI [support page](https://www.msi.com/Motherboard/MAG-X870e-TOMAHAWK-WIFI/support#driver)
 
+## 💾 Additional Software
+
+TBD
