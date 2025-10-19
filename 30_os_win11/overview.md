@@ -27,4 +27,13 @@ After completing the installation, use a USB drive with the Wi-Fi and chipset dr
 
 ## 💾 Additional Software
 
-TBD
+- [FPS Monitor](https://fpsmon.com/en/) - displays an FPS and performance statistics overlay while gaming
+- [Samsung Magician Software](https://semiconductor.samsung.com/consumer-storage/magician/) - used for monitoring and updating the firmware of Samsung SSDs
+
+## 🪄 Various tweaks
+
+### Fonts
+
+I’m using the following fonts for the Windows Terminal:
+- [CascadiaMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip) → `CaskaydiaMonoNerdFont-Regular.ttf`
+- [UbuntuMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/UbuntuMono.zip) → `UbuntuMonoNerdFont-Regular.ttf`
