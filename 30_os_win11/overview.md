@@ -42,7 +42,7 @@ I’m using the following fonts for the Windows Terminal:
 
 I use Oh My Posh to enhance the prompt appearance in Windows Terminal.
 
-- Setup for WSL (Ubuntu)
+- Setup for Ubuntu (WSL):
   Install _Oh My Posh_:
   ```
   curl -s https://ohmyposh.dev/install.sh | bash -s
@@ -50,4 +50,21 @@ I use Oh My Posh to enhance the prompt appearance in Windows Terminal.
   Add the following line at the end of `~/.profile`:
   ```
   eval "$(oh-my-posh init bash)"
+  ```
+- Setup for PowerShell
+  Install _Oh My Posh_:
+  ```
+  winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
+  ```
+  Create the profile:
+  ```
+  New-Item -Path $PROFILE -Type File -Force
+  ```
+  Allow running remote scripts (run as Administrator):
+  ```
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+  ```
+  Add the following line at the end profile (located at `$PROFILE`):
+  ```
+  oh-my-posh init pwsh | Invoke-Expression
   ```
