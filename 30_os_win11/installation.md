@@ -34,14 +34,14 @@ After completing the installation, use a USB drive with the Wi-Fi and chipset dr
 
 ## :penguin: WSL
 
-1. Install WSL:
+### 1. Install WSL:
    
    ```
    wsl --install
    wsl --install -d Ubuntu
    ```
 
-2. Move installed distro to my second parition:
+### 2. Move the installed distro to a secondary partition
    
    ```
    mkdir D:\WSL
@@ -53,51 +53,51 @@ After completing the installation, use a USB drive with the Wi-Fi and chipset dr
 
 ## 🖥️ Terminal Setup
 
-### Fonts
+### 1. Fonts
 
-I’m using the following fonts for the Windows Terminal:
+I use the following fonts in **Windows Terminal**:
 
 - [CascadiaMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/CascadiaMono.zip) → `CaskaydiaMonoNerdFont-Regular.ttf`
 - [UbuntuMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/UbuntuMono.zip) → `UbuntuMonoNerdFont-Regular.ttf`
 
-### Oh My Posh
+### 2. Set up Oh My Posh
 
-I use Oh My Posh to enhance the prompt appearance in Windows Terminal.
+I use **Oh My Posh** to enhance the prompt appearance in **Windows Terminal**.
 
-- Setup for Ubuntu (WSL):
-  Install _Oh My Posh_:
+#### Setup for Ubuntu (WSL):
+Install **Oh My Posh**:
   
-  ```
-  curl -s https://ohmyposh.dev/install.sh | bash -s
-  ```
+```
+curl -s https://ohmyposh.dev/install.sh | bash -s
+```
   
-  Add the following line at the end of `~/.profile`:
+Add the following line at the end of `~/.profile`:
   
-  ```
-  eval "$(oh-my-posh init bash)"
-  ```
+```
+eval "$(oh-my-posh init bash)"
+```
 
-- Setup for PowerShell
-  Install _Oh My Posh_:
+#### Setup for PowerShell
+Install **Oh My Posh**:
   
-  ```
-  winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
-  ```
+```
+winget install JanDeDobbeleer.OhMyPosh --source winget --scope user --force
+```
   
-  Create the profile:
+Create the PowerShell profile (if it doesn’t already exist):
   
-  ```
-  New-Item -Path $PROFILE -Type File -Force
-  ```
+```
+New-Item -Path $PROFILE -Type File -Force
+```
   
-  Allow running remote scripts (run as Administrator):
+Allow running remote scripts (run as Administrator):
   
-  ```
-  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-  ```
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+```
   
-  Add the following line at the end profile (located at `$PROFILE`):
+Add the following line at the end of the profile file (located at `$PROFILE`):
   
-  ```
-  oh-my-posh init pwsh | Invoke-Expression
-  ```
+```
+oh-my-posh init pwsh | Invoke-Expression
+```
