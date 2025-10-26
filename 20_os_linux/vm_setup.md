@@ -84,3 +84,32 @@ Always verify paths with qemu-img info before running the command:
 ```
 qemu-img info ~/VMs/win11/snapshots/win11_snapshot.qcow2
 ```
+
+## 💡 Creating Windows 11 VM
+
+> [!NOTE]
+> To bypass account login/creation during installation:
+> ```
+> Shift + F10
+> ipconfig /release
+> ```
+
+### Install VirtIO Drivers
+
+VirtIO provides optimized paravirtualized drivers for disk, network, and other devices in QEMU-based VMs.
+
+- **Download:** [https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/)  
+- **Mount the ISO:** attach `virtio-win-x.x.xxx.iso` to the Windows 11 VM.  
+- **Install:**  
+  - Open the mounted ISO inside the guest.  
+  - Run `virtio-win-guest-tools.exe`, or manually update missing devices via **Device Manager** → *Update driver* → *Browse my computer* → point to the ISO root.  
+- **Reboot** after installation completes.
+
+### Install UTM Guest Tools (optional)
+
+UTM Guest Tools provide additional integration features such as improved clipboard support, display resizing, and time synchronization.
+
+- **Download:** from the [UTM releases page on GitHub](https://github.com/utmapp/UTM/releases) (look for `utm-guest-tools-*.iso`).  
+- **Mount the ISO** in the VM.  
+- **Install:** run the installer inside Windows and follow on-screen instructions.  
+- **Reboot** once finished.
