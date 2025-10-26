@@ -60,3 +60,27 @@ VMs
 - Active sessions or experiments are done on **snapshot images** stored under `snapshots/`.
 - The `iso/` directory holds installation media, drivers (e.g., VirtIO), and guest tools.
 
+## 🖥️ Useful VM Commands
+
+### Create a Snapshot
+
+To create a new snapshot that uses an existing base image as its backing file:
+
+```bash
+sudo qemu-img create -f qcow2 -b ~/VMs/win11/win11_base.qcow2 -F qcow2 ~/VMs/win11/snapshots/win11_snapshot.qcow2
+```
+
+This command creates a differential QCOW2 image (`win11_snapshot.qcow2`) that only stores changes made since the base image.
+
+### Rebase a Snapshot
+
+If the base image was moved to a different location, you can update the snapshot’s backing file path using:
+
+```
+sudo qemu-img rebase -u -b ~/VMs/win11/win11_base.qcow2 -F qcow2 ~/VMs/win11/snapshots/win11_snapshot.qcow2
+```
+
+Always verify paths with qemu-img info before running the command:
+```
+qemu-img info ~/VMs/win11/snapshots/win11_snapshot.qcow2
+```
