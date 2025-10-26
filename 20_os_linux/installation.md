@@ -79,3 +79,19 @@ sudo apt -f install
 ```
 source ~/.zshr
 ```
+
+## ✨ Font Rendering Quality
+
+To improve font sharpness and readability on high-resolution displays, install **GNOME Tweaks**:
+
+```
+sudo apt install gnome-tweaks
+```
+
+Then open GNOME Tweaks and adjust the following settings:
+
+- **Fonts** → **Hinting**: `Full`
+- **Fonts** → **Antialiasing**: `Subpixel (RGB)`
+- **Fonts** → **Scaling Factor**: `1.25`
+
+These settings provide smoother edges, better contrast, and optimal scaling for 1440p or 4K monitors.
