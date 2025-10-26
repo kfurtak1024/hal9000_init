@@ -122,7 +122,7 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo usermod -aG docker $USER
 ```
 
-Then log out and log back in for the group changes to take effect.
+Then restart for the group changes to take effect.
 
 ### 4. Enable Docker on startup
 
