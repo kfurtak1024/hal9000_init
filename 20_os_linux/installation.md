@@ -134,7 +134,7 @@ sudo apt -f install
 
 ### 9. Reinitialize Zsh:
 ```
-source ~/.zshr
+source ~/.zshrc
 ```
 
 ## ✨ Font Rendering Quality
