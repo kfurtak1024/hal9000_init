@@ -48,6 +48,13 @@ Then, change the default theme in `~/.zshrc`:
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
+> [!Note]
+> To re-run **Powerlevel10k** configuration wizard run:
+>
+> ```
+> p10k configure
+> ```
+
 ### 5. Install zsh-autosuggestions
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -95,44 +102,3 @@ Then open GNOME Tweaks and adjust the following settings:
 - **Fonts** → **Scaling Factor**: `1.25`
 
 These settings provide smoother edges, better contrast, and optimal scaling for 1440p or 4K monitors.
-
-## 🐳 Docker Installation
-
-### 1. Add Docker’s official GPG key and repository
-
-```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] \
-  https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
-
-### 2. Install Docker Engine, CLI, and Compose plugin
-
-```
-sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
-
-### 3. Run Docker without sudo
-
-```
-sudo usermod -aG docker $USER
-```
-
-Then restart for the group changes to take effect.
-
-### 4. Enable Docker on startup
-
-```
-sudo systemctl enable docker
-sudo systemctl start docker
-```
-
-### 5. Test the installation
-
-```
-docker run hello-world
-```
