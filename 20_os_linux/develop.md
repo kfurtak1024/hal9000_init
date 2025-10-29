@@ -87,6 +87,7 @@ Add the following lines to `~/.zshrc` to enable **pyenv**:
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init - zsh)"' >> ~/.zshrc
+echo 'export PIPENV_VENV_IN_PROJECT=1' >> ~/.zshrc
 ```
 Restart your shell to apply the changes:
 ```
