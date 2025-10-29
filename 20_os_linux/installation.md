@@ -24,6 +24,56 @@ To do this, let’s configure Linux to use **local time**:
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
+## 🖋️ Kitty Terminal Installation
+
+[Kitty](https://sw.kovidgoyal.net/kitty/) is a GPU-based terminal emulator with advanced features and high performance.
+
+### 1. Install Kitty
+
+Run the official installer script:
+
+```
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
+
+By default, this installs Kitty to:
+
+```
+~/.local/kitty.app/
+```
+
+### 2. Make Kitty available as a command
+
+Create a symlink so kitty can be run from anywhere:
+
+```
+sudo ln -s ~/.local/kitty.app/bin/kitty /usr/local/bin/
+```
+
+### 3. Add Kitty to Desktop Launcher
+
+Copy the desktop entry:
+
+```
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
+```
+
+Update paths to Kitty executable and icon in the desktop file:
+
+```
+sed -i "s|Icon=kitty|Icon=$(readlink -f ~)/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty*.desktop
+sed -i "s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g" ~/.local/share/applications/kitty*.desktop
+```
+
+> [!Note]
+> To uninstall Kitty:
+> ```
+> rm -rf ~/.local/kitty.app
+> sudo rm -f /usr/local/bin/kitty
+> rm -f ~/.local/share/applications/kitty.desktop
+> rm -rf ~/.config/kitty
+> ```
+
 ## 🖥️ Terminal configuration
 
 ### 1. Install Hack Nerd Font
