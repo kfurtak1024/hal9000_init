@@ -74,6 +74,12 @@ sed -i "s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g" ~/.loca
 > rm -rf ~/.config/kitty
 > ```
 
+> [!Tip]
+> Set theme to `Glacier`:
+> ```
+> kitty +kitten themes
+> ```
+
 ## 🖥️ Terminal configuration
 
 ### 1. Install Hack Nerd Font
