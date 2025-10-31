@@ -126,12 +126,33 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 ```
 And add it to the plugins list in `~/.zshrc`.
 
-### 7. Install `bat` (a modern replacement for `cat`)
+### 7. Install fastfetch
+
+Install fastfetch using the official PPA:
+```
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo apt update
+sudo apt install fastfetch
+```
+
+Download the HAL 9000 icon from
+https://design-kink.com/wp-content/uploads/2013/04/HAL-9000-1080.png
+and save it as:
+```
+~/.config/kitty/hal9000.png
+```
+
+Then, add the following line **at the beginning** of `~/.zshrc file`:
+```
+fastfetch --logo-type kitty-direct --logo-width 50 --logo-padding 4 --logo-padding-top 2 --logo ~/.config/kitty/hal9000.png
+```
+
+### 8. Install `bat` (a modern replacement for `cat`)
 ```
 sudo apt install bat
 ```
 
-### 8. Install `lsd` 🌈 (a modern `ls`)
+### 9. Install `lsd` 🌈 (a modern `ls`)
 Download the latest release from [lsd releases](https://github.com/lsd-rs/lsd/releases/) and install it:
 ```
 sudo dpkg -i lsd*.deb
