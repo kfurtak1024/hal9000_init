@@ -139,12 +139,12 @@ Download the HAL 9000 icon from
 https://design-kink.com/wp-content/uploads/2013/04/HAL-9000-1080.png
 and save it as:
 ```
-~/.config/kitty/hal9000.png
+~/.config/fastfetch/hal9000.png
 ```
 
 Then, add the following line **at the beginning** of `~/.zshrc file`:
 ```
-fastfetch --logo-type kitty-direct --logo-width 50 --logo-padding 4 --logo-padding-top 2 --logo ~/.config/kitty/hal9000.png
+fastfetch --logo-type kitty-direct --logo-width 50 --logo-padding 4 --logo-padding-top 2 --logo ~/.config/fastfetch/hal9000.png
 ```
 
 ### 8. Install `bat` (a modern replacement for `cat`)
