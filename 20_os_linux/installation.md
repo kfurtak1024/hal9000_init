@@ -142,9 +142,44 @@ and save it as:
 ~/.config/fastfetch/hal9000.png
 ```
 
+Create the configuration file at `~/.config/fastfetch/config.jsonc`:
+```
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "kitty-direct",
+    "source": "~/.config/fastfetch/hal9000.png",
+    "width": 26,
+    "padding": {
+      "top": 1,
+      "left": 3,
+      "right": 3
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "uptime",
+    "display",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "break",
+    "colors"
+  ]
+}
+```
+
 Then, add the following line **at the beginning** of `~/.zshrc file`:
 ```
-fastfetch --logo-type kitty-direct --logo-width 50 --logo-padding 4 --logo-padding-top 2 --logo ~/.config/fastfetch/hal9000.png
+if [[ -o interactive ]]; then
+  fastfetch
+fi
 ```
 
 ### 8. Install `bat` (a modern replacement for `cat`)
