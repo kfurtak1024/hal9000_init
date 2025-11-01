@@ -151,12 +151,13 @@ Create the configuration file at `~/.config/fastfetch/config.jsonc`:
     "source": "~/.config/fastfetch/hal9000.png",
     "width": 26,
     "padding": {
-      "top": 1,
+      "top": 2,
       "left": 3,
       "right": 3
     }
   },
   "modules": [
+    "break",
     "title",
     "separator",
     "os",
