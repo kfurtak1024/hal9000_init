@@ -20,7 +20,7 @@ I’m following this excellent [guide](https://mutschler.dev/linux/pop-os-btrfs-
 Since I’m using Windows 11 and Linux in a dual boot configuration, I need to align how both systems handle the hardware clock.
 To do this, let’s configure Linux to use **local time**:
 
-```
+```bash
 timedatectl set-local-rtc 1 --adjust-system-clock
 ```
 
@@ -28,7 +28,7 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 
 To improve font sharpness and readability on high-resolution displays, install **GNOME Tweaks**:
 
-```
+```bash
 sudo apt install gnome-tweaks
 ```
 
@@ -44,11 +44,11 @@ These settings provide smoother edges, better contrast, and optimal scaling for 
 
 > [!IMPORTANT]
 > Do not use **Pop!_Shop** for **polychromatic**. Install both **openrazer** and **polychromatic** using apt.
-> ```
+> ```bash
 > apt install openrazer polychromatic
 > ```
 
 Download and extract [polychromatic effects](.config/config_polychromatic.tar.gz):
-```
+```bash
 tar xvf config_polychromatic.tar.gz -C ~
 ```
