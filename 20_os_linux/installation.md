@@ -43,7 +43,7 @@ These settings provide smoother edges, better contrast, and optimal scaling for 
 ## 🌈 OpenRazer and Polychromatic
 
 > [!IMPORTANT]
-> Do not use **Pop!_Shop** for **polychromatic**. Install both **openrazer** and **polychromatic** using apt.
+> Do not use **Pop!_Shop** for **Polychromatic**. Install both **OpenRazer** and **Polychromatic** using apt.
 > ```bash
 > apt install openrazer polychromatic
 > ```
@@ -52,3 +52,10 @@ Download and extract [polychromatic effects](.config/config_polychromatic.tar.gz
 ```bash
 tar xvf config_polychromatic.tar.gz -C ~
 ```
+
+> [!IMPORTANT]
+> By default, only privileged users can access USB devices directly.
+> To allow your regular user account to control Razer devices (required by **OpenRazer** and **Polychromatic**), add user to the plugdev group:
+> ```bash
+> sudo gpasswd -a $USER plugdev
+> ```
