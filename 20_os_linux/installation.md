@@ -62,4 +62,52 @@ tar xvf config_polychromatic.tar.gz -C ~
 
 ## 🖨️ Xerox B235 Setup
 
-TODO ...
+To enable network discovery and printing for the **Xerox B235** over Wi-Fi using **mDNS (Multicast DNS)**, follow these steps:
+
+### 1. Enable `mdns4` in `/etc/nsswitch.conf`
+
+Edit the file:
+```bash
+sudo nano /etc/nsswitch.conf
+```
+
+Find the line starting with 'hosts:' and update it from:
+```
+hosts:          files mdns4_minimal [NOTFOUND=return] dns myhostname mymachines
+```
+
+to:
+```
+hosts:          files mdns4_minimal [NOTFOUND=continue] mdns4 dns myhostname mymachines
+```
+
+This ensures proper name resolution for printers and other devices advertised via mDNS (e.g., `printer.local`).
+
+### 2. Allow mDNS lookups in `systemd-resolved`
+
+Edit the configuration file:
+```bash
+sudo nano /etc/systemd/resolved.conf
+```
+Uncomment (or add) the `MulticastDNS` line under `[Resolve]` and set it to `yes`:
+```
+MulticastDNS=yes
+```
+
+Then restart the service:
+```bash
+sudo systemctl restart systemd-resolved
+```
+
+### 3. Enable mDNS on your Wi-Fi interface
+
+Enable mDNS for your active network interface (replace `wlp8s0` if differs):
+```bash
+sudo resolvectl mdns wlp8s0 yes
+```
+
+Verify that it’s enabled:
+```bash
+resolvectl status wlp8s0
+```
+`+mDNS` should be listed under Protocols for that interface.
