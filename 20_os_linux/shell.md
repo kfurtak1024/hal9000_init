@@ -118,7 +118,10 @@ sudo apt update
 sudo apt install fastfetch
 ```
 
-Extract **fastfetch** [configuration](.config/config-fastfetch.tar.gz) in home directory.
+Download and extract [fastfetch configuration](.config/config-fastfetch.tar.gz) in home directory:
+```
+tar xvf config-fastfetch.tar.gz -C ~
+```
 
 > [!Note]
 > To build configuration from scratch:
