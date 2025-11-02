@@ -13,7 +13,7 @@ For virtualization, I use **QEMU** with **virt-manager** as the graphical fronte
 
 To install and configure the environment:
 
-```
+```bash
 sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager
 sudo systemctl enable --now libvirtd
 sudo usermod -aG libvirt $(whoami)
@@ -76,12 +76,12 @@ This command creates a differential QCOW2 image (`win11_snapshot.qcow2`) that on
 
 If the base image was moved to a different location, you can update the snapshot’s backing file path using:
 
-```
+```bash
 sudo qemu-img rebase -u -b ~/VMs/win11/win11_base.qcow2 -F qcow2 ~/VMs/win11/snapshots/win11_snapshot.qcow2
 ```
 
 Always verify paths with qemu-img info before running the command:
-```
+```bash
 qemu-img info ~/VMs/win11/snapshots/win11_snapshot.qcow2
 ```
 
