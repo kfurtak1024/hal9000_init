@@ -49,7 +49,7 @@ I plan to mitigate this limitation by running Windows 11 in a virtual machine un
 |---------|-------------|
 | [00_hardware](00_hardware/components.md) | Components list, rationale, and assembly notes |
 | [10_setup](10_setup/thermal_setup.md) | Cooling and thermal setup — fan configuration, airflow design, BIOS fan curves, and noise optimization |
-| [20_os_linux](20_os_linux/installation.md) | Guides for installing and configuring Pop!_OS, including partitioning, terminal customization, and development environment setup (Docker, Python). Also includes instructions for gaming on Linux, AI setup, and virtualization with QEMU/KVM.<br><ul><li>[AI Setup](20_os_linux/ai.md)</li><li>[Development Setup](20_os_linux/develop.md)</li><li>[Gaming Setup](20_os_linux/gaming.md)</li><li>[VM Setup](20_os_linux/vm_setup.md)</li></ul> |
+| [20_os_linux](20_os_linux/installation.md) | Guides for installing and configuring Pop!_OS, including partitioning, terminal customization, and development environment setup (Docker, Python). Also includes instructions for gaming on Linux, AI setup, and virtualization with QEMU/KVM.<br><ul><li>[AI Setup](20_os_linux/ai.md)</li><li>[Development Setup](20_os_linux/develop.md)</li><li>[Gaming Setup](20_os_linux/gaming.md)</li><li>[Installation](20_os_linux/installation.md)</li><li>[Shell Setup](20_os_linux/shell.md)</li><li>[VM Setup](20_os_linux/vm_setup.md)</li></ul> |
 | [30_os_win11](30_os_win11/installation.md) | Installation guide for Windows 11, partitioning details, configuration for VPN compatibility and gaming |
 
 ## 📜 License
