@@ -59,3 +59,7 @@ tar xvf config_polychromatic.tar.gz -C ~
 > ```bash
 > sudo gpasswd -a $USER plugdev
 > ```
+
+## 🖨️ Xerox B235 Setup
+
+TODO ...
