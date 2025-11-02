@@ -40,3 +40,15 @@ Then open GNOME Tweaks and adjust the following settings:
 
 These settings provide smoother edges, better contrast, and optimal scaling for 1440p or 4K monitors.
 
+## 🌈 OpenRazer and Polychromatic
+
+> [!IMPORTANT]
+> Do not use **Pop!_Shop** for **polychromatic**. Install both **openrazer** and **polychromatic** using apt.
+> ```
+> apt install openrazer polychromatic
+> ```
+
+Download and extract [polychromatic effects](.config/config_polychromatic.tar.gz):
+```
+tar xvf config_polychromatic.tar.gz -C ~
+```
