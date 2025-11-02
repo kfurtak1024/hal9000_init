@@ -118,51 +118,55 @@ sudo apt update
 sudo apt install fastfetch
 ```
 
-Download the [HAL-9000-500x500.png](https://design-kink.com/wp-content/uploads/2013/04/HAL-9000-1080-500x500.png) and save it as:
-```
-~/.config/fastfetch/hal9000.png
-```
+Extract **fastfetch** [configuration](.config/config-fastfetch.tar.gz) in home directory.
 
-Create the configuration file at `~/.config/fastfetch/config.jsonc`:
-```
-{
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "logo": {
-    "type": "kitty-direct",
-    "source": "~/.config/fastfetch/hal9000.png",
-    "width": 26,
-    "padding": {
-      "top": 2,
-      "left": 3,
-      "right": 3
-    }
-  },
-  "modules": [
-    "break",
-    "title",
-    "separator",
-    "os",
-    "kernel",
-    "uptime",
-    "display",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "break",
-    "colors"
-  ]
-}
-```
-
-Then, add the following line **at the beginning** of `~/.zshrc file`:
-```
-if [[ -o interactive ]]; then
-  fastfetch
-fi
-```
+> [!Note]
+> To build configuration from scratch:
+> Download the [HAL-9000-500x500.png](https://design-kink.com/wp-content/uploads/2013/04/HAL-9000-1080-500x500.png) and save it as:
+> ```
+> ~/.config/fastfetch/hal9000.png
+> ```
+>
+> Create the configuration file at `~/.config/fastfetch/config.jsonc`:
+> ```
+> {
+>   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+>   "logo": {
+>     "type": "kitty-direct",
+>     "source": "~/.config/fastfetch/hal9000.png",
+>     "width": 26,
+>     "padding": {
+>       "top": 2,
+>       "left": 3,
+>       "right": 3
+>     }
+>   },
+>   "modules": [
+>     "break",
+>     "title",
+>     "separator",
+>     "os",
+>     "kernel",
+>     "uptime",
+>     "display",
+>     "cpu",
+>     "gpu",
+>     "memory",
+>     "swap",
+>     "disk",
+>     "localip",
+>     "break",
+>     "colors"
+>   ]
+> }
+> ```
+>
+> Then, add the following line **at the beginning** of `~/.zshrc file`:
+> ```
+> if [[ -o interactive ]]; then
+>   fastfetch
+> fi
+> ```
 
 > [!Tip]
 > To display **fastfetch** only once after logging in, create a temporary marker by adding following line to '.profile':
