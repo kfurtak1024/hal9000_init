@@ -166,6 +166,21 @@ if [[ -o interactive ]]; then
 fi
 ```
 
+> [!Tip]
+> To display **fastfetch** only once after logging in, create a temporary marker by adding following line to '.profile':
+> 
+> ```
+> touch $HOME/.run_only_once
+> ```
+> 
+> Then update `~/.zshrc` to invoke **fastfetch** only if the file exists and the shell is interactive:
+> ```
+> if [[ -f $HOME/.run_only_once && -o interactive ]]; then
+>   rm -f $HOME/.run_only_once
+>   fastfetch
+> fi
+> ```
+
 ### 8. Install `bat` (a modern replacement for `cat`)
 ```
 sudo apt install bat
