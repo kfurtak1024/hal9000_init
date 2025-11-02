@@ -118,9 +118,7 @@ sudo apt update
 sudo apt install fastfetch
 ```
 
-Download the HAL 9000 icon from
-https://design-kink.com/wp-content/uploads/2013/04/HAL-9000-1080.png
-and save it as:
+Download the [HAL-9000-500x500.png](https://design-kink.com/wp-content/uploads/2013/04/HAL-9000-1080-500x500.png) and save it as:
 ```
 ~/.config/fastfetch/hal9000.png
 ```
