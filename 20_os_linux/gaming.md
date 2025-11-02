@@ -18,13 +18,13 @@ Repository (forked xone): [https://github.com/dlundqvist/xone](https://github.co
 
 Install dependencies:
 
-```
+```bash
 sudo apt install cabextract
 ```
 
 Clone the repository and install the driver:
 
-```
+```bash
 git clone https://github.com/dlundqvist/xone.git
 cd xone
 sudo make install
