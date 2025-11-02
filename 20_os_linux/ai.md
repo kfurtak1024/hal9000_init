@@ -15,7 +15,7 @@
 
 Run the official installer script. It is recommended to check the [official NVM GitHub page](https://github.com/nvm-sh/nvm) for the latest version of the install script.
 
-```
+```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
@@ -25,7 +25,7 @@ This script clones the NVM repository to `~/.nvm` and adds the source line to th
 
 The installation script should automatically add the necessary lines to the `.zshrc` file. To apply the changes, restart the shell or run:
 
-```
+```bash
 source ~/.zshrc
 ```
 
@@ -33,7 +33,7 @@ source ~/.zshrc
 
 To verify that NVM has been installed correctly, run:
 
-```
+```bash
 nvm --version
 ```
 
@@ -41,13 +41,13 @@ nvm --version
 
 Install the latest LTS version of Node.js:
 
-```
+```bash
 nvm install --lts
 ```
 
 A specific version can also be installed:
 
-```
+```bash
 nvm install 20.10.0
 ```
 
@@ -55,6 +55,6 @@ nvm install 20.10.0
 
 To set a default Node.js version to be used in any new shell, run:
 
-```
+```bash
 nvm alias default lts/*
 ```
