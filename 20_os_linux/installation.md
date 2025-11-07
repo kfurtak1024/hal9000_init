@@ -111,3 +111,36 @@ Verify that it’s enabled:
 resolvectl status wlp8s0
 ```
 `+mDNS` should be listed under Protocols for that interface.
+
+## 🌡️ NCT6687D Driver Setup
+
+This driver enables fan speed and temperature monitoring for the **MSI MAG X870E TOMAHAWK WIFI** motherboard (and other models using the Nuvoton NCT6687D chip).
+
+### 1. Install the Driver
+
+Clone the repository and install the kernel module:
+
+```bash
+git clone https://github.com/kfurtak1024/nct6687d
+cd nct6687d
+sudo make install
+```
+
+## 2. Configure Module Options
+
+Create configuration files for automatic loading and setup of the module:
+
+```bash
+echo "options nct6687 fan_config=msi_alt1" | sudo tee /etc/modprobe.d/nct6687.conf
+echo "nct6687" | sudo tee /etc/modules-load.d/nct6687.conf
+```
+
+## 3. Reload the Module
+
+Apply the changes immediately without rebooting:
+
+```bash
+sudo depmod -a
+sudo modprobe -r nct6687
+sudo modprobe nct6687
+```
