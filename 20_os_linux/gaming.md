@@ -25,7 +25,7 @@ sudo apt install cabextract
 Clone the repository and install the driver:
 
 ```bash
-git clone https://github.com/dlundqvist/xone.git
+git clone https://github.com/kfurtak1024/xone
 cd xone
 sudo make install
 ```
