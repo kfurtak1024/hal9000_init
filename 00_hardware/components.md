@@ -45,3 +45,4 @@ This document describes the full physical configuration of my workstation — co
 - [Noctua NF-A12x25 G2 PWM - product page](https://noctua.at/en/nf-a12x25-g2-pwm)
 - [Noctua NF-A14x25 G2 PWM - product page](https://noctua.at/en/nf-a14x25-g2-pwm)
 - [Corsair HX1200i - product page](https://www.corsair.com/pl/pl/p/psu/cp-9020281-eu/hx1200i-fully-modular-ultra-low-noise-platinum-atx-1200-watt-pc-power-supply-eu-cp-9020281-eu)
+- [LG 32GR93U-B](https://www.lg.com/us/monitors/lg-32gr93u-b-gaming-monitor)
