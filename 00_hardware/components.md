@@ -28,10 +28,7 @@ This document describes the full physical configuration of my workstation — co
 | **Case** | **Fractal Design North XL Charcoal Black TG Dark** | Spacious airflow-focused case; premium materials and aesthetics. |
 | **Case Fans** | **2 × Noctua NF-A12x25 G2 PWM + 3 × NF-A14x25 G2 PWM Sterrox** | Quiet, high-pressure fans for balanced intake/exhaust; tuned for laminar airflow. |
 | **PSU** | **Corsair HX1200i** | 1200 W 80+ Platinum, fully modular, zero-RPM fan mode, ample headroom. |
-
-## 🧾 Future Upgrades
-
-- **Monitor upgrade** to 32 inches, IPS, 4K, 144Hz+
+| **Monitor** | **LG 32GR93U-B (32", IPS, 4K, 144Hz)** | Excellent color accuracy and pixel density; ideal for development, gaming, and productivity. |
 
 ## 🔗 References
 
@@ -45,4 +42,4 @@ This document describes the full physical configuration of my workstation — co
 - [Noctua NF-A12x25 G2 PWM - product page](https://noctua.at/en/nf-a12x25-g2-pwm)
 - [Noctua NF-A14x25 G2 PWM - product page](https://noctua.at/en/nf-a14x25-g2-pwm)
 - [Corsair HX1200i - product page](https://www.corsair.com/pl/pl/p/psu/cp-9020281-eu/hx1200i-fully-modular-ultra-low-noise-platinum-atx-1200-watt-pc-power-supply-eu-cp-9020281-eu)
-- [LG 32GR93U-B](https://www.lg.com/us/monitors/lg-32gr93u-b-gaming-monitor)
+- [LG 32GR93U-B - product page](https://www.lg.com/us/monitors/lg-32gr93u-b-gaming-monitor)
